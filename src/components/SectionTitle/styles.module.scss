@@ -1,0 +1,14 @@
+.section {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+/*   TABLET   */
+
+@media screen and (max-width: 768px) {
+  .section {
+    font-size: 35px;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,42 @@
+.component {
+  width: fit-content;
+
+  .button {
+    padding: 1rem 2rem;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #006453;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+    font-size: 20px;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff !important;
+      background-color: #00856f;
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.large {
+      font-size: 27px;
+      padding: 1.5rem 2.5rem;
+    }
+  }
+}
+
+/*   LAPTOP Small   */
+
+@media screen and (max-width: 1024px) {
+  .component {
+    .button {
+      &.large {
+        padding: 1rem 2rem;
+        font-size: 20px;
+      }
+    }
+  }
+}

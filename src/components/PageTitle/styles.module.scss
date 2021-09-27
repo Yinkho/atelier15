@@ -1,0 +1,22 @@
+.title {
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 10%;
+}
+
+/*   LAPTOP Small   */
+
+@media screen and (max-width: 1024px) {
+  .title {
+    padding: 0;
+  }
+}
+
+/*   TABLET   */
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+}

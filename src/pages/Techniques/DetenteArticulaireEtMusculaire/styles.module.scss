@@ -1,0 +1,47 @@
+.list {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    margin-right: 3rem;
+    max-width: 50%;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  > ul {
+    max-width: 50%;
+
+    li {
+      list-style-type: unset;
+      text-align: left;
+    }
+  }
+}
+
+/*   LAPTOP Small   */
+
+@media screen and (max-width: 1024px) {
+  .list {
+    flex-direction: column;
+
+    > div {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    > ul {
+      max-width: unset;
+
+      li {
+        list-style-position: inside;
+        text-align: center;
+      }
+    }
+  }
+}

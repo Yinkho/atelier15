@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 17rem;
+}
+
+.full-name {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.phone-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  p {
+    margin-left: 1rem;
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+
+.expertise {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.button {
+  margin-top: auto;
+}
+
+/*   TABLET   */
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+
+    * {
+      text-align: center;
+    }
+  }
+
+  .button {
+    margin-top: 2rem;
+  }
+}

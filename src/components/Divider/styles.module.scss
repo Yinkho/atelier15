@@ -1,0 +1,30 @@
+.divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  .leaf-logo {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+/*   TABLET   */
+
+@media screen and (max-width: 768px) {
+  .divider {
+    :first-child,
+    :last-child {
+      width: 30%;
+    }
+
+    .leaf-logo {
+      width: 10%;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}

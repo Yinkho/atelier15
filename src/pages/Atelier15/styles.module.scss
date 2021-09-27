@@ -1,0 +1,19 @@
+.title {
+  margin-bottom: 3rem;
+}
+
+:global {
+  .image-gallery-thumbnail.active {
+    border-color: #006453;
+  }
+
+  .image-gallery-thumbnail:hover {
+    border-color: #006453;
+  }
+
+  .image-gallery-svg {
+    > polyline {
+      color: #ffffff;
+    }
+  }
+}
