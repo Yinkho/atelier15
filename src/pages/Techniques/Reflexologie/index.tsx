@@ -35,8 +35,10 @@ const Reflexologie = (): ReactElement => {
         Cette approche globale du corps en prévention et en entretien permet
         d’améliorer votre qualité de vie quel que soit votre âge (enfant,
         adolescent, adulte et senior).
-        <br />
-        Le réflexologue, peut être amené́ , en fonction de ce que votre corps lui
+      </p>
+      <br />
+      <p className={styles.definition}>
+        Le practicien, peut être amené, en fonction de ce que votre corps lui
         apprend, à vous conseiller sur l’importance d’une hygiène de vie adaptée
         à la gestion de vos troubles.
       </p>

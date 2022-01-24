@@ -47,6 +47,21 @@
   color: #ffffff;
 }
 
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    margin-right: 0.7rem;
+  }
+
+  p {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 0.3rem;
+  }
+}
+
 /*   LAPTOP Small   */
 
 @media screen and (max-width: 1024px) {
@@ -60,6 +75,10 @@
 @media screen and (max-width: 768px) {
   .footer {
     padding: 2rem;
+
+    p {
+      text-align: center;
+    }
 
     > div {
       display: flex;

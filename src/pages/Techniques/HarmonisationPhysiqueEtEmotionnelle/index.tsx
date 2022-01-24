@@ -32,6 +32,12 @@ const HarmonisationPhysiqueEtEmotionnelle = (): ReactElement => {
         L’harmonisation physique et émotionnelle est une méthode simple, souvent
         rapide et efficace qui permet de :
       </p>
+      <br />
+      <p className={styles.definition}>
+        Le practicien, peut être amené, en fonction de ce que votre corps lui
+        apprend, à vous conseiller sur l’importance d’une hygiène de vie adaptée
+        à la gestion de vos troubles.
+      </p>
       <div className={styles.list}>
         <div>
           <img src={sample1} alt="Réflexologie" />

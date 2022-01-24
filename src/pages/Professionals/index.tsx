@@ -3,6 +3,7 @@ import { useParams, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import AnneZakka from './AnneZakka';
 import DominiqueTalleux from './DominiqueTalleux';
+import BeatriceGau from './BeatriceGau';
 import styles from './styles.module.scss';
 
 const Professionals = (): ReactElement => {
@@ -11,6 +12,8 @@ const Professionals = (): ReactElement => {
   switch (professional) {
     case 'dominique-talleux':
       return <DominiqueTalleux />;
+    case 'beatrice-gau':
+      return <BeatriceGau />;
     case 'anne-zakka':
       return <AnneZakka />;
     default:

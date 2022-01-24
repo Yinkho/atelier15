@@ -15,7 +15,10 @@ import place1 from '../../assets/place1.jpg';
 import place2 from '../../assets/place2.jpg';
 import place3 from '../../assets/place3.jpg';
 import place4 from '../../assets/place4.jpg';
-import sample5 from '../../assets/sample5.jpg';
+import professionals1 from '../../assets/professionals1.jpg';
+import professionals2 from '../../assets/professionals2.jpg';
+import professionals3 from '../../assets/professionals3.jpg';
+import professionals4 from '../../assets/professionals4.jpg';
 import styles from './styles.module.scss';
 
 const Home = (): ReactElement => {
@@ -37,7 +40,8 @@ const Home = (): ReactElement => {
         </h2>
         <Button
           onClick={() => {
-            window.scrollTo(0, professionalsRef.current.offsetTop - 100);
+            professionalsRef &&
+              window.scrollTo(0, professionalsRef?.current.offsetTop - 100);
           }}
           variant="large"
         >
@@ -52,13 +56,13 @@ const Home = (): ReactElement => {
             img={reflexologieCard}
             title="Réflexologie"
             subtitle="Faciale - Palmaire - plantaire"
-            bodyText="Soulager de nombreux maux, effets du stress, insomnie, douleurs articulaires ou musculaires, lombalgie et troubles digestifs et bien d'autres..."
+            bodyText="Soulager de nombreux maux, effets du stress, insomnie, douleurs articulaires ou musculaires, lombalgie, troubles digestifs et bien d'autres..."
             to="/reflexologie"
           />
           <ExpertiseCard
             img={jmvCard}
             title="Méthode JMV"
-            bodyText="Éliminer les éléments naturels pouvant affaiblir votre organisme (addictions, allergies, intolérances alimentaires, produits chimiques et pollution)."
+            bodyText="Traiter les éléments perturbateurs pouvant affaiblir votre organisme (produits chimiques, pollution, médicaments, intolérances alimentaires, allergies et addictions)."
             to="/methode-jmv"
           />
           <ExpertiseCard
@@ -81,13 +85,13 @@ const Home = (): ReactElement => {
         <div className={styles['place-section-container']}>
           <div className={styles['place-section-images']}>
             <div>
-              <img src={place1} />
+              <img src={place3} />
             </div>
             <div>
               <img src={place2} />
             </div>
             <div>
-              <img src={place3} />
+              <img src={place1} />
             </div>
             <div>
               <img src={place4} />
@@ -99,7 +103,7 @@ const Home = (): ReactElement => {
               détente dans une ambiance chaleureuse, une atmosphère calme et
               reposante.
             </p>
-            <Button>Accéder à l'atelier</Button>
+            <Button to="/atelier15">Accéder à l'atelier</Button>
           </div>
         </div>
       </section>
@@ -107,7 +111,16 @@ const Home = (): ReactElement => {
       <section>
         <SectionTitle text="Des professionnels certifiés" />
         <div className={styles['professionals-section-container']}>
-          <img src={sample5} />
+          <div className={styles['professionals-section-images']}>
+            {/* <img src={professionals1} />
+            <img src={professionals2} />
+            <img src={professionals3} />
+            <img src={professionals4} /> */}
+            <div />
+            <div />
+            <div />
+            <div />
+          </div>
           <div className={styles['professionals-section-content']}>
             <p>
               Vous bénéficierez de soins par des professionnels certifiés, qui
@@ -124,7 +137,7 @@ const Home = (): ReactElement => {
         <div className={styles['contact-section-container']}>
           <ContactCard
             fullName="Dominique TALLEUX"
-            phoneNumber="06 10 22 24 87"
+            phoneNumber="06 32 65 67 31"
             expertises={[
               'Réflexologie faciale',
               'Méthode JMV',
@@ -134,12 +147,18 @@ const Home = (): ReactElement => {
           />
           <ContactCard
             fullName="Anne ZAKKA"
-            phoneNumber="06 10 22 24 87"
+            phoneNumber="07 62 12 41 63"
             expertises={[
               'Réflexologie faciale, palmaire et plantaire',
               'Détente articulaire et musculaire',
             ]}
             to="/professionnels/anne-zakka"
+          />
+          <ContactCard
+            fullName="Béatrice GAU"
+            phoneNumber="06 32 95 49 04"
+            expertises={['Réflexologie faciale, palmaire, plantaire']}
+            to="/professionnels/beatrice-gau"
           />
         </div>
       </section>

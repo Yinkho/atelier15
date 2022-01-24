@@ -1,12 +1,11 @@
 import React, { ReactElement, useState } from 'react';
+import { bool, func, InferProps } from 'prop-types';
 import { NavLink, useRouteMatch, useLocation } from 'react-router-dom';
 import cx from 'classnames';
 import Button from '../Button';
 import styles from './styles.module.scss';
 
-const Navbar = (): ReactElement => {
-  const [isMenuOpened, toggleMenuOpen] = useState(false);
-
+const Navbar = ({ isMenuOpened, toggleMenuOpen }: Props): ReactElement => {
   const getRouteMatch = (route: string): boolean =>
     useLocation().pathname.includes(route);
 
@@ -97,6 +96,13 @@ const Navbar = (): ReactElement => {
                   to="/professionnels/anne-zakka"
                 >
                   Anne ZAKKA
+                </NavLink>
+                <NavLink
+                  onClick={(e) => e.stopPropagation()}
+                  activeClassName={styles['active-sublink']}
+                  to="/professionnels/beatrice-gau"
+                >
+                  Béatrice Gau
                 </NavLink>
               </div>
             </div>
@@ -232,6 +238,16 @@ const Navbar = (): ReactElement => {
               >
                 Anne ZAKKA
               </NavLink>
+              <NavLink
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleMenuOpen(false);
+                }}
+                activeClassName={styles['active-link-mobile']}
+                to="/professionnels/beatrice-gau"
+              >
+                Béatrice GAU
+              </NavLink>
             </div>
           </li>
         </div>
@@ -240,6 +256,13 @@ const Navbar = (): ReactElement => {
   );
 };
 
-Navbar.propTypes = {};
+const propTypes = {
+  isMenuOpened: bool.isRequired,
+  toggleMenuOpen: func.isRequired,
+};
+
+type Props = InferProps<typeof propTypes>;
+
+Navbar.propTypes = propTypes;
 
 export default Navbar;

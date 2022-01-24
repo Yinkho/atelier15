@@ -178,11 +178,12 @@
   .menu-mobile-overlay {
     opacity: 0;
     pointer-events: none;
-    position: absolute;
+    position: fixed;
+    overflow: auto;
     z-index: 100;
     left: 0;
-    top: 110px;
-    min-height: calc(100vh - 110px);
+    top: 155px;
+    height: 100%;
     width: 100vw;
     background-color: #e9e9e9;
     padding: 3rem 2rem;
@@ -262,7 +263,7 @@
     padding-bottom: 2rem;
 
     .navlink {
-      font-size: 30px;
+      font-size: 27px;
     }
 
     .sublink {
@@ -282,7 +283,7 @@
         }
 
         &.professionals {
-          height: 9rem;
+          height: 13rem;
         }
       }
     }
@@ -294,7 +295,7 @@
 @media screen and (max-width: 768px) {
   .menu-mobile {
     .menu-mobile-overlay {
-      top: 99px;
+      top: 120px;
     }
   }
 }
@@ -306,6 +307,29 @@
     .menu-mobile-header {
       p {
         display: none;
+      }
+    }
+  }
+
+  .menu li,
+  .menu-mobile-overlay li {
+    .sublink-mobile {
+      a {
+        padding: 0.7rem;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .menu li,
+  .menu-mobile-overlay li {
+    &:hover {
+      .sublink-mobile {
+        &.techniques {
+          height: 19rem;
+        }
       }
     }
   }

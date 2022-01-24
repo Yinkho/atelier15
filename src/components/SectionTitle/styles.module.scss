@@ -12,3 +12,11 @@
     margin-bottom: 3rem;
   }
 }
+
+/*   MOBILE Large   */
+
+@media screen and (max-width: 425px) {
+  .section {
+    font-size: 30px;
+  }
+}

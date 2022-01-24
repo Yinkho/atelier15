@@ -36,14 +36,13 @@ function App() {
           </Switch>
         </div>
         <p className={styles['legal-text']}>
-          Nos techniques ne se substituent pas à la médecine
-          conventionnellement.
+          Nos techniques ne se substituent pas à la médecine conventionnelle.
           <br />
           Nos praticiens ne peuvent pas faire un diagnostic, modifier un
           traitement ou participer à une décision thérapeutique.
           <br />
           Conformément à la loi, nos pratiques ne peuvent être en aucun cas
-          assimilée à des soins médicaux ou de kinésithérapie, mais à une
+          assimilées à des soins médicaux ou de kinésithérapie, mais à une
           technique de bien-être par la relaxation physique et la détente
           libératrice de stress.
           <br />

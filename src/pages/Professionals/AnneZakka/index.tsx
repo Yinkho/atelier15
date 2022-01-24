@@ -15,6 +15,10 @@ const AnneZakka = (): ReactElement => {
         <div>
           <h1>Anne ZAKKA</h1>
           <h2>Réflexologue</h2>
+          <br />
+          <br />
+          <p>annezakkalenouy@gmail.com</p>
+          <p>07&nbsp;62&nbsp;12&nbsp;41&nbsp;63</p>
         </div>
       </div>
       <Divider />
@@ -45,7 +49,7 @@ const AnneZakka = (): ReactElement => {
           <p>
             Je prends en charge&nbsp;
             <b>
-              du nourrisson au séniors pour tous les maux.
+              du nourrisson au sénior pour tous les maux.
               <br />
               <br />
               Tous les systèmes du corps sont inclus :

@@ -28,7 +28,7 @@ const MethodeJMV = (): ReactElement => {
       </p>
       <br />
       <p className={styles.definition}>
-        Le réflexologue, peut être amené, en fonction de ce que votre corps lui
+        Le practicien, peut être amené, en fonction de ce que votre corps lui
         apprend, à vous conseiller sur l’importance d’une hygiène de vie adaptée
         à la gestion de vos troubles.
       </p>
